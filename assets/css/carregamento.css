@@ -30,7 +30,7 @@ body {
 #barra-progresso {
     width: 0.1%;
     height: 100%;
-    background-color: aqua;
+    background-color: white;
 
     animation: carregar 3s linear forwards;
 }
