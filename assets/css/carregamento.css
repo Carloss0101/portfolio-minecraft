@@ -1,0 +1,45 @@
+body {
+    background-color: #ff3e2c;
+}
+
+.video-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+    flex-direction: column; /* coloca um embaixo do outro */
+    align-items: center;    /* centraliza */
+    
+}
+
+.video-container video {
+    width: 800px;
+    display: block;
+}
+
+#barra-container {
+    border: 3px solid white;
+    width: 800px;
+    height: 20px;
+
+    overflow: hidden;
+}
+
+#barra-progresso {
+    width: 0.1%;
+    height: 100%;
+    background-color: aqua;
+
+    animation: carregar 3s linear forwards;
+}
+
+@keyframes carregar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
