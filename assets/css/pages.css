@@ -1,0 +1,83 @@
+body{
+    background-image: url("../images/fundo terra.png");
+    background-repeat: repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#main{
+    width: 700px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#projeto-container {
+    max-height: 500px;  
+    width: 100%;    
+    overflow-y: auto; 
+}
+
+.projeto{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.img-projeto{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.projeto-info h1{
+    margin: 0;
+    font-size: 1.4em;
+}
+
+.projeto-info p{
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+#botoes-esquerda{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+#botoes-esquerda button{
+    margin-right: 10px;
+    padding: 8px 100px;
+}
+
+#botao-voltar{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#botao-voltar button{
+    padding: 8px 15px;
+}
+
+#projeto-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+#projeto-container::-webkit-scrollbar-track {
+    background: #2b2b2b;
+}
+
+#projeto-container::-webkit-scrollbar-thumb {
+    background: #8b8b8b;
+    border: 2px solid #3a3a3a;
+}
+
+#projeto-container::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+}
