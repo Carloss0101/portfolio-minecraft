@@ -9,14 +9,13 @@ body {
     transform: translate(-50%, -50%);
     display: flex;
 
-    flex-direction: column; /* coloca um embaixo do outro */
-    align-items: center;    /* centraliza */
+    flex-direction: column;
+    align-items: center;   
     
 }
 
 .video-container video {
     width: 800px;
-    display: block;
 }
 
 #barra-container {
@@ -32,7 +31,7 @@ body {
     height: 100%;
     background-color: white;
 
-    animation: carregar 3s linear forwards;
+    animation: carregar 4s linear forwards;
 }
 
 @keyframes carregar {

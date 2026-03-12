@@ -1,8 +1,8 @@
-const tempo = 5; //Segundos
-
-const barraElement = document.getElementById("barra-progresso");
+const tempo = 4.2; //Segundos
 
 
-function atualizarBarraProgresso() {
-
-}
+setTimeout(() => {
+    //redirecionar para index
+    console.log("Carregando a index!")
+    window.location.href = "/index.html"
+}, tempo * 1000)

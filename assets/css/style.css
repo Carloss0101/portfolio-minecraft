@@ -1,5 +1,86 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('../font/Minecraft.woff2') format('woff2'),
+        url('../font/Minecraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: "Minecraft", sans-serif;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#logo {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: center;   
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.button {
+    text-align: center;
+    background-color: #808080;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #707070;
+    cursor: pointer;
+}
+
+.button-big {
+    width: 600px;
+}
+
+.button-small {
+    width: 290px;
+}
+
+#buttons-together {
+    margin-top: 10px;
+}
+
+#mensagem {
+    color: #ffaa00;
+    font-size: 1.2em;
+    position: absolute;
+    margin: 10px;
+    top: 30%;
+    left: 63%;
+
+    transform: translate(-50%, -50%) rotate(-20deg);
+
+    animation: pulsar 1s infinite alternate;
+}
+
+@keyframes pulsar {
+    from {
+        transform: translate(-50%, -50%) rotate(-20deg) scale(1);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-20deg) scale(1.15);
+    }
+}
